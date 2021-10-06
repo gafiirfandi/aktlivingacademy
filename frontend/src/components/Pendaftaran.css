@@ -1,0 +1,176 @@
+.pendaftaran {
+  margin-top: -80px;
+  overflow: hidden;
+}
+
+.pendaftaran-left {
+  padding-top: 100px;
+  padding-left: 100px !important;
+}
+
+.pendaftaran-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.form-pendaftaran {
+  margin-top: 10px;
+}
+
+.form-control:focus {
+  border-color: #fdbe15;
+  box-shadow: 0 0 8px #fdbe15 !important;
+  outline: 0 none;
+}
+
+.custom-form-control {
+  padding: 0.375rem 0;
+  margin-right: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.pendaftaran-submit {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.pendaftaran-button {
+  background-color: #fdbe15 !important;
+  font-weight: 600;
+}
+
+/* .loadingSpinner {
+  padding-top: 5px;
+} */
+
+.hideSpinner {
+  visibility: hidden;
+}
+
+.pendaftaran-image {
+  /* height: 500px;
+  width: 353.5px; */
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* width: 40vw; */
+  /* height: auto; */
+  will-change: transform;
+  right: -650px !important;
+  transform: translate3d(0, 0, 0);
+  transition: transform 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.hide-pendaftaran-image {
+  will-change: transform;
+}
+
+.show-pendaftaran-image {
+  -webkit-animation: fadeInFromNone 1s ease-out;
+  animation: fadeInFromNone 1s ease-out;
+  transform: translateX(-650px) translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.pendaftaran-right {
+  text-align: end;
+}
+
+.pendaftaran-input-date {
+  min-height: 2.5rem;
+}
+
+@media screen and (max-width: 770px) {
+  .pendaftaran-title {
+    margin-left: 15px;
+  }
+
+  .pendaftaran-button {
+    margin-left: 15px !important;
+  }
+
+  .pendaftaran-left {
+    padding-top: 20px;
+    padding-left: 30px !important;
+  }
+
+  .pendaftaran-image {
+    margin-top: 20px;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInToNone {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInToNone {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}

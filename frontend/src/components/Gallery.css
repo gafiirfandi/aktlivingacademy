@@ -1,0 +1,92 @@
+/* ROW BOOTSTAP GALLERY */
+
+/* .gallery {
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.gallery-main {
+ 
+  padding-right: 0px;
+}
+
+.box {
+  background-color: #fdbe15;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.img-collage-large {
+  height: 265px;
+  width: auto;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in;
+  cursor: pointer;
+}
+
+.row-2 {
+  margin-top: 10px;
+}
+
+.img-collage-small {
+  height: 200px;
+  width: auto;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in;
+  cursor: pointer;
+}
+
+.img-collage-large:hover,
+.img-collage-small:hover {
+  transform: scale(1.02);
+} */
+
+/* FLEX BOOTSTRAP GALLERY */
+
+.gallery {
+  margin-top: 50px;
+  /* margin-left: 15px; */
+  padding-left: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-large,
+.gallery-small {
+  padding: 5px;
+}
+
+.img-collage-large {
+  height: 269px;
+  width: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in;
+  cursor: pointer;
+}
+
+.img-collage-small {
+  height: 200px;
+  width: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in;
+  cursor: pointer;
+}
+
+.img-collage-large:hover,
+.img-collage-small:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 450px) {
+  .img-collage-large {
+    height: auto;
+    width: 45vw;
+  }
+
+  .img-collage-small {
+    height: auto;
+    width: 45vw;
+  }
+}

@@ -1,0 +1,98 @@
+/* .tentang-kami {
+  margin: 0;
+} */
+
+.tentang-kami-left {
+  text-align: center;
+}
+
+.tentang-kami-image {
+  position: relative;
+  width: 505px;
+  height: 463px;
+
+  /* width: 100%;
+  height: 100%; */
+  will-change: transform;
+  left: -650px;
+  transform: translate3d(0, 0, 0);
+  transition: transform 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.hide-tentang-kami {
+  will-change: transform;
+}
+
+.show-tentang-kami {
+  -webkit-animation: fadeInFromNone 1s ease-out;
+  animation: fadeInFromNone 1s ease-out;
+  transform: translateX(650px) translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.tentang-kami-title {
+  font-size: 62px;
+  font-weight: 700;
+}
+
+.yellow-line {
+  margin-top: 40px;
+  background-color: #fdbe15;
+  border: solid 3px #fdbe15;
+  border-radius: 3px;
+  width: 10%;
+}
+
+@media screen and (max-width: 450px) {
+  .tentang-kami {
+    margin-top: 40px;
+    padding-left: 30px !important;
+  }
+
+  .tentang-kami-title {
+    font-size: 35px;
+  }
+
+  .tentang-kami-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tentang-kami-right {
+    margin-top: 30px;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,16 @@
+.maps {
+  display: flex;
+}
+
+.maps-iframe {
+  padding-left: 5px;
+  margin: auto;
+  width: 95vw;
+  height: 300px;
+}
+
+@media screen and (max-width: 450px) {
+  .maps{
+    margin-top: 70px;
+  }
+}
